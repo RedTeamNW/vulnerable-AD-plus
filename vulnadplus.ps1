@@ -601,8 +601,4 @@ function Invoke-VulnAD {
     Write-Good "Anonymous LDAP Query Enabled"
     VulnAD-PublicSMBShare
     Write-Good "Created Public SMB Share"
-    VulnAD-FirewallOff
-    Write-Good "Firewall Turned Off"
-    Write-Output "Restarting in 30 seconds..."
-    Sleep 30; Restart-Computer
 }
